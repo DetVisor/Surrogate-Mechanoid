@@ -5,7 +5,7 @@
     <ThingDef ParentName="LightMechanoid">
       <defName>Mech_Surrogate</defName>
       <label>Surrogate</label>
-      <description>A human-sized mechanoid designed to take care of babies. Their upper body is covered in warm heating apparatuses to comfort newborns, and its chest simulates a human heartbeat. The Surrogate can feed children with baby food, play with them, take them to growth vats and fight fires. It can attack with a small slugthrower in case of an emergency.</description>
+      <description>A human-sized mechanoid designed to take care of babies. Their upper body is covered in warm heating apparatuses to comfort newborns, and its chest simulates a human heartbeat. The Surrogate can feed children with baby food, play with them and fight fires. It can attack with a small slugthrower in case of an emergency.</description>
       <statBases>
         <FoodPoisonChance>0.01</FoodPoisonChance>
 		<WorkSpeedGlobal>1</WorkSpeedGlobal>
