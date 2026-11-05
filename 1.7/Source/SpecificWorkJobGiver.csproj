@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- RimWorld 1.7 runs on .NET 10. Compiles the code in 1.6/Source, only the target and references differ.
+       Build with: dotnet build -c Release 1.7/Source/SpecificWorkJobGiver.csproj -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>SpecificWorkJobGiver</AssemblyName>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\1.6\Source\SpecificWorkJobGiver\*.cs" />
+    <Compile Include="..\..\1.6\Source\SpecificWorkJobGiver.MechFriendly\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.7.4977-alpha.1" ExcludeAssets="runtime" />
+    <!-- The 1.7 Harmony mod ships 0Harmony 3.0.0. -->
+    <PackageReference Include="Lib.Harmony.Ref" Version="3.0.0-rc.2" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>

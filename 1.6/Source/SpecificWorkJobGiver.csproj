@@ -1,17 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <!-- RimWorld 1.6 (Unity, .NET Framework 4.8). Build with: dotnet build -c Release 1.6/Source/SpecificWorkJobGiver.csproj -->
   <PropertyGroup>
     <AssemblyName>SpecificWorkJobGiver</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <TargetFramework>net48</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup />
-  <ItemGroup /> 
- <ItemGroup>   
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*-*" />
-    <PackageReference Include="Lib.Harmony" Version="2.3.6" />	
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" ExcludeAssets="runtime" />
+    <!-- The 1.6 Harmony mod ships 0Harmony 2.x. -->
+    <PackageReference Include="Lib.Harmony.Ref" Version="2.3.6" ExcludeAssets="runtime" />
   </ItemGroup>
 </Project>

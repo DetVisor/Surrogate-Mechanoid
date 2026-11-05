@@ -4,6 +4,8 @@
 	<author>Detvisor,Sovereign</author>
 	<supportedVersions>
 		<li>1.5</li>
+		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>sov.det.surrogatemech</packageId>
 	<description>This mod introduces a new Standard Mechtech mechanoid capable of taking care of children and feeding them, the Surrogate.</description>
@@ -26,5 +28,9 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>wvc.sergkart.biotech.MoreMechanoidsWorkModes</li>
+		<li>Wecardo.TunnulerFix</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>Porio.TunnulerFix</li>
+	</incompatibleWith>
 </ModMetaData>
